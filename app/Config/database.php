@@ -74,7 +74,7 @@ class DATABASE_CONFIG {
         'host' => 'localhost',
         'login' => 'root',
         'password' => '1',
-        'database' => 'cakephp-marketplace',
+        'database' => 'cakephp-store',
         'prefix' => '',
         'encoding' => 'utf8',
     );

@@ -1,28 +1,33 @@
 <?php
-//    debug($this->{'request'});
-//    $data = $this->{'request'}->{'data'};
-?>
 
-<?php
-
-if(false){
-//	$banner = '/resources/app/img/banners/'.$data['User']['banner'];
+if($bannerSelected){
+	$banner = '/resources/app/img/banners/'.$bannerSelected['Banner']['name'];
 }else{
 	$banner = '/resources/app/img/los-angeles.jpg';
 }
 
 ?>
 
-	<header id="banner" class="page-header" style="margin-top: 0; background: url('<?php echo $banner; ?>') no-repeat center center scroll; padding: 350px 20px 10px 20px; -webkit-background-size: cover; -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;">
-		<h1>
-			<a href="/stock" style="text-shadow: 0 0 3px rgba(0,0,0,.8);" class="a-white">Stock</a>
-			<?php
-			if(isset($userLogged)){
-				echo '- <a id="change-banner" href="#" style="text-shadow: 0 0 3px rgba(0,0,0,.8);" class="rotate a-white"><i class="fa fa-camera"></i></a>';
-			}
-			?>
-		</h1>
-	</header>
+    <div class="banner" style="background: url(<?php echo $banner; ?>) no-repeat center center scroll; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;" >
+        <div class="banner-content">
+            <?php
+            if(isset($userLogged)){
+                echo '<a id="change-banner" href="#" style="text-shadow: 0 0 3px rgba(0,0,0,.8);" class="rotate a-white"><i class="fa fa-camera"></i></a>';
+            }
+            ?>
+        </div>
+    </div>
+
+
+<!--	<header id="banner" class="page-header" style="margin-top: 0; background: url('--><?php //echo $banner; ?><!--') no-repeat center center scroll; padding: 350px 20px 10px 20px; -webkit-background-size: cover; -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;">-->
+<!--		<h1>-->
+<!--			--><?php
+//			if(isset($userLogged)){
+//				echo '<a id="change-banner" href="#" style="text-shadow: 0 0 3px rgba(0,0,0,.8);" class="rotate a-white"><i class="fa fa-camera"></i></a>';
+//			}
+//			?>
+<!--		</h1>-->
+<!--	</header>-->
 
 
 
@@ -53,6 +58,7 @@ if(false){
 								<a class="pw-button-blogger pw-look-native"></a>
 								<a class="pw-button-email pw-look-native"></a>
 							</div>
+                            <!-- <###### CHANGE THIS #######> -->
 							<script src="http://i.po.st/static/v3/post-widget.js#publisherKey=4a68gt2qi4hhevvdnlj5&retina=true" type="text/javascript"></script>
 						</div>
 						<div class="panel-footer" style="background: url(/resources/app/img/escheresque.png);border-top: 1px solid gold;">

@@ -1,6 +1,4 @@
-# CakePHP MarketPlace
-
-For view the demo, please visit: http://mystock.la/
+# CakePHP Store
 
 ## Installation
 
@@ -33,7 +31,7 @@ http://stackoverflow.com/questions/869092/how-to-enable-mod-rewrite-for-apache-2
 127.0.1.1	romelgomez
 
 #127.0.0.1	www.jqtree-cakephp-example.com
-127.0.0.2	www.cakephp-marketplace.net
+127.0.0.2	www.cakephp-store.net
 
 
 # The following lines are desirable for IPv6 capable hosts
@@ -51,10 +49,10 @@ ff02::2 ip6-allrouters
 
 ServerName 127.0.0.1:80
 
-# www.santomercado.net
+# www.cakephp-store.net
 <VirtualHost 127.0.0.2:80>
- ServerName www.cakephp-marketplace.net
- DocumentRoot "/home/romelgomez/workspace/projects/cakephp-marketplace/app/webroot"
+ ServerName www.cakephp-store.net
+ DocumentRoot "/home/romelgomez/workspace/projects/cakephp-store/app/webroot"
   DirectoryIndex index.php
   <Directory />
       Require all granted
@@ -63,7 +61,7 @@ ServerName 127.0.0.1:80
       Order deny,allow
       Allow from all
   </Directory>
-  <Directory "/home/romelgomez/workspace/projects/cakephp-marketplace/app/webroot">
+  <Directory "/home/romelgomez/workspace/projects/cakephp-store/app/webroot">
     Options FollowSymLinks
     AllowOverride All
     Allow from all
@@ -77,23 +75,23 @@ ServerName 127.0.0.1:80
 
 For deactivate `a2ensite hack.conf`
 
-Visit www.cakephp-marketplace.net, is very sure you will see many issues, for solve this problems check the other steps
+Visit www.cakephp-store.net, is very sure you will see many issues, for solve this problems check the other steps
 
 ## 3) Set database
 
-The config database file is in /cakephp-marketplace/app/Config/database.php
+The config database file is in /cakephp-store/app/Config/database.php
 
 ## 4) There are directories that are constantly rewritten, they are:
 
 To resolve this issues apply the following:
 
-`chmod 777 -R /cakephp-marketplace/app/tmp`
+`chmod 777 -R /cakephp-store/app/tmp`
 
-`chmod 777 -R /cakephp-marketplace/lib`
+`chmod 777 -R /cakephp-store/lib`
 
-`chmod 777 -R  /cakephp-marketplace/app/webroot/resources/app/img/products`
+`chmod 777 -R  /cakephp-store/app/webroot/resources/app/img/products`
 
-`chmod 777 -R  /cakephp-marketplace/app/webroot/resources/app/img/banners`
+`chmod 777 -R  /cakephp-store/app/webroot/resources/app/img/banners`
 
 ## 5) Install bower dependencies
 

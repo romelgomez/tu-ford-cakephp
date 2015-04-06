@@ -14,7 +14,16 @@
 		$url_action = strstr($this->{'request'}->url, '/', true); // Desde PHP 5.3.0
 		$this->{'set'}('url_action',$url_action);
 
-		// set banner option for logged users
+
+        $bannerSelected = $this->{'Banner'}->find('first', array(
+            'conditions' => array('Banner.selected'=>1)
+        ));
+
+        $this->{'set'}('bannerSelected',$bannerSelected);
+
+
+
+        // set banner option for logged users
 		$user_logged = $this->{'Auth'}->User();
 		if($user_logged){
 			$banners = $this->{'Banner'}->find('all', array(

@@ -181,3 +181,20 @@ a:hover{
     background-image: linear-gradient(to bottom, #C5241F, #B90000);
 }
 
+
+/*  Banner */
+
+.banner{
+    margin: 40px 0 20px;
+    margin-top: 0;
+    border-bottom: 1px solid #959595;
+    height: 400px;
+    padding: 10px 20px;
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 50px;
+}

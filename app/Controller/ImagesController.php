@@ -207,6 +207,7 @@ class ImagesController extends AppController{
                         'size' 			=> $size,
                         'name' 			=> $object['name'],
                         'name_tag'		=> $file['name'],
+                        'selected' 		=> 0,
                         'deleted' 		=> 0
                     )
                 );
@@ -287,25 +288,29 @@ class ImagesController extends AppController{
     }
 
     public function selectBanner(){
-        $user_logged = $this->{'Auth'}->User();
         $request = $this->{'request'}->input('json_decode',true);
 
-        $this->{'loadModel'}('User');
+        $this->{'loadModel'}('Banner');
+
+        $banners = $this->{'Banner'}->find('all');
+
+        foreach($banners as $key => $item) {
+            $this->{'Banner'}->id = $item['Banner']['id'];
+            $this->{'Banner'}->saveField('selected', 0);
+        }
 
         $update = array(
-            'User'=>array(
-                'id'=>	    $user_logged['User']['id'],
-                'banner'=>	$request['facebook']['name'],
+            'Banner'=>array(
+                'id'=>	        $request['facebook']['id'],
+                'selected'=>	1
             )
         );
 
-        if($this->{'User'}->save($update)) {
+        if($this->{'Banner'}->save($update)) {
             $return['status'] 	= true;
         }else{
             $return['status'] = false;
         }
-
-//        $return = $request;
 
         $this->{'set'}('return',$return);
         $this->{'render'}('ajax_view','ajax');

@@ -10,94 +10,15 @@
 	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 	<meta http-equiv="pragma" content="no-cache" />
 
-	<?php
+    <?php
+        $SITE_URL   = 'http://www.example-store.com';
+        $SITE_NAME  = 'ExampleStore.com';
+    ?>
 
-	$data = $this->{'request'}->{'data'};
-
-	// facebook
-	if(isset($url_action)){
-		if($url_action == 'product'){
-
-			// Title URL -  lazy solution
-			$foo    = trim($data['Product']['title']);
-			$foo    = strtolower($foo);
-			$foo    = str_replace('/', '',$foo);
-			$foo    = preg_replace( '/\s+/', ' ', $foo);
-			$title  = str_replace(' ', '-',$foo);
-
-			// Description
-			$text =  $data['Product']['body'];
-
-			$description = '';
-			$_description        =  strip_tags($text);     // remove html entities
-			$_description        =  trim($_description);   // remove whitespaces
-			$_descriptionLength  =  strlen($_description); // Get string length
-
-			if($_descriptionLength > 200){
-				$_description = substr($_description, 0, 140);      // Return part of a string
-				$_description =  explode(" ",$_description);        // returns an array containing all the words found inside the string
-				for($i = 0; $i < sizeof($_description)-1; $i++){
-					$description .= ' '.(string)$_description[$i];
-				}
-				$description = ucfirst(trim($description)).' ...';
-			}else{
-				$description = ucfirst($_description);
-			}
-
-
-			echo '<title>CakePHP-MarketPlace - '.$data['Product']['title'].' - '.$data['User']['name'].' Stock</title>';
-
-			echo '<meta property="og:title" content="'.$data['Product']['title'].'" />';
-			echo '<meta property="og:url" content="http://www.mystock.la/producto/'.$data['Product']['id'].'/'.$title.'.html" />';
-			echo '<meta property="og:type" content="website" />';
-			echo '<meta property="og:site_name" content="MyStock.LA" />';
-			echo '<meta property="og:description" content="'.$description.'" />';
-			echo '<meta property="og:image" content="http://www.mystock.la/resources/app/img/products/'.$data['Image'][0]['facebook'].'" />';
-			echo '<meta property="fb:app_id" content="338515926310582" />';
-
-
-			echo '<meta name="twitter:card" content="summary_large_image" />';
-			echo '<meta name="twitter:site" content="@mystockla" />';
-			echo '<meta name="twitter:title" content="'.ucfirst($data['Product']['title']).'" />';
-			echo '<meta name="twitter:description" content="'.$description.'">';
-			echo '<meta name="twitter:image:src" content="http://www.mystock.la/resources/app/img/products/'.$data['Image'][0]['facebook'].'" />';
-			echo '<meta name="twitter:url" content="http://www.mystock.la/stock/'.$data['Product']['user_id'].'" />';
-
-		}
-
-		if($url_action == 'stock'){
-
-			if($data['User']['banner'] !== NULL){
-				$banner = 'resources/app/img/banners/'.$data['User']['banner'];
-			}else{
-				$banner = 'resources/app/img/benjaminFranklin.jpg';
-			}
-
-			echo '<title>CakePHP-MarketPlace  - '.$data['User']['name'].' Stock</title>';
-
-			echo '<meta property="og:title" content="'.$data['User']['name'].' Stock" />';
-			echo '<meta property="og:url" content="http://www.mystock.la/stock/'.$data['User']['id'].'" />';
-			echo '<meta property="og:type" content="website" />';
-			echo '<meta property="og:site_name" content="MyStock.LA" />';
-			echo '<meta property="og:description" content="Visita el stock de producto y/o servicios que tengo para ti" />';
-			echo '<meta property="og:image" content="http://www.mystock.la/'.$banner.'" />';
-			echo '<meta property="fb:app_id" content="338515926310582" />';
-
-			echo '<meta name="twitter:card" content="summary_large_image" />';
-			echo '<meta name="twitter:site" content="@mystockla" />';
-			echo '<meta name="twitter:title" content="'.ucfirst($data['User']['name']).' Stock" />';
-			echo '<meta name="twitter:description" content="Visita el stock de producto y/o servicios que tengo para ti">';
-			echo '<meta name="twitter:image:src" content="http://www.mystock.la/'.$banner.'" />';
-			echo '<meta name="twitter:url" content="http://www.mystock.la/stock/'.$data['User']['id'].'" />';
-		}
-	}else{
-		echo '<title>CakePHP-MarketPlace</title>';
-	}
-	?>
+    <title><?php echo $SITE_NAME ?></title>;
 
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-
 
 
 	<?php
@@ -140,7 +61,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="/">CakePHP-MarketPlace</a>
+		<a class="navbar-brand" href="/"><?php echo $SITE_NAME ?></a>
 	</div>
 	<div class="collapse navbar-collapse">
 		<ul class="nav navbar-nav">
@@ -153,9 +74,6 @@
 						<li role="presentation" class="dropdown-header">PRODUCTS</li>
 						<li><a href="/published"><span class="glyphicon glyphicon-bullhorn"></span> Published</a></li>
 						<li><a href="/drafts"><span class="glyphicon glyphicon-pencil"></span> Drafts</a></li>
-						<li><a href="/stock/<?php echo $userLogged['User']['id']; ?>"><span class="glyphicon glyphicon-th"></span> Stock</a></li>
-						<!--                                <li class="divider"></li>-->
-						<!--                                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> <del>Configuración</del></a></li>-->
 					</ul>
 				</li>
 			<?php } ?>
@@ -180,7 +98,7 @@
 <!-- footer -->
 <div class="footer" style="background: #222; background: url(/resources/app/img/escheresque_ste.png); border-top: 1px solid black;">
 	<div style="text-align: center; margin-top: 20px; color: #ffffff;">
-		Copyright &copy;2014 CakePHP-MarketPlace - All rights reserved.
+		Copyright &copy;2015 <?php echo $SITE_NAME ?> - All rights reserved.
 		<a href="/terms-of-service" target="_blank">Terms of Service</a> &
 		<a href="/privacy-policy" target="_blank">Privacy Policy</a>
 	</div>

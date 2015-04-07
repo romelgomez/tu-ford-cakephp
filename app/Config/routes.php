@@ -73,8 +73,6 @@ Router::connect('/save-draft',	 							array('controller' => 'products',	'action
 Router::connect('/published', 								array('controller' => 'products',	'action' => 'published'));	   					// Acción Get  - Interfaz para acceder a los productos publicados
 Router::connect('/drafts',	 								array('controller' => 'products',	'action' => 'drafts'));	   						// Acción Get  - Interfaz para acceder a los borradores
 
-Router::connect('/stock',                               	array('controller' => 'products', 	'action' => 'stock'));           	            // Acción Get  - Interfaz para acceder al stock
-
 Router::connect('/products',                                array('controller' => 'products',   'action' => 'products')); 						// Acción Ajax - para administrar publicaciones.
 
 //Router::connect('/search',                                  array('controller' => 'products',   'action' => 'search')); 						// Acción Ajax - para pausar buscar publicaciones.

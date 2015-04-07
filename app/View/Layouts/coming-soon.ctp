@@ -9,8 +9,12 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+    <?php
+    $SITE_URL   = 'http://www.example-store.com';
+    $SITE_NAME  = 'ExampleStore.com';
+    ?>
 
-	<title>MarketPlace</title>
+	<title><?php echo $SITE_NAME; ?></title>
 
 	<?php
 	$css = array();
@@ -49,7 +53,7 @@
 
 			<div class="masthead clearfix">
 				<div class="inner">
-					<h3 class="masthead-brand" style="font-family: 'Lato', sans-serif; font-weight: 300;">MarketPlace</h3>
+					<h3 class="masthead-brand" style="font-family: 'Lato', sans-serif; font-weight: 300;"><?php echo $SITE_NAME; ?></h3>
 				</div>
 			</div>
 
@@ -59,7 +63,7 @@
 
 			<div class="mastfoot">
 				<div class="inner">
-					<p>Copyright &copy;2014 MarketPlace - All rights reserved.</p>
+					<p>Copyright &copy;2015 <?php echo $SITE_NAME; ?> - All rights reserved.</p>
 				</div>
 			</div>
 

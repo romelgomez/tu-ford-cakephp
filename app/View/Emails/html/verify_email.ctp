@@ -1,3 +1,7 @@
+<?php
+$SITE_URL   = 'http://www.example-store.com';
+$SITE_NAME  = 'ExampleStore.com';
+?>
 <h3>MyStock.LA - Verify your email address</h3>
 <p>Click in the next link to verify your email address:</p>
 <p><a href="http://www.mystock.la/ve/<?php echo (string)$userId.'/'.(string)$publicKey; ?>" target="_blank">Verify my email address!</a></p>

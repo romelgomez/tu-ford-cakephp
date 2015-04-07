@@ -1,1 +1,5 @@
-http://www.mystock.la/npr/<?php echo (string)$userId.'/'.(string)$publicKey; ?>
+<?php
+$SITE_URL   = 'http://www.example-store.com';
+$SITE_NAME  = 'ExampleStore.com';
+?>
+<?php echo $SITE_URL; ?>/npr/<?php echo (string)$userId.'/'.(string)$publicKey; ?>

@@ -8,7 +8,7 @@ if($bannerSelected){
 
 ?>
 
-    <div class="banner" style="background: url(<?php echo $banner; ?>) no-repeat center center scroll; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;" >
+    <div id="banner" class="banner" style="background: url(<?php echo $banner; ?>) no-repeat center center scroll; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;" >
         <div class="banner-content">
             <?php
             if(isset($userLogged)){

@@ -30,8 +30,8 @@
 
     $data = $this->{'request'}->{'data'};
 
-    $SITE_URL   = 'http://www.example-store.com';
-    $SITE_NAME  = 'ExampleStore.com';
+    $SITE_URL   = 'http://www.tuford.com';
+    $SITE_NAME  = 'TuFord.com';
 
     // facebook
     if(isset($url_action)){
@@ -75,7 +75,7 @@
 
 
             echo '<meta name="twitter:card" content="summary_large_image" />';
-            echo '<meta name="twitter:site" content="@mystockla" />'; //  <###### CHANGE THIS #######>
+            echo '<meta name="twitter:site" content="@tuford" />'; //  <###### CHANGE THIS #######>
             echo '<meta name="twitter:title" content="'.ucfirst($data['Product']['title']).' - '.$SITE_NAME.'" />';
             echo '<meta name="twitter:description" content="'.$description.'">';
             echo '<meta name="twitter:image:src" content="'.$SITE_URL.'/resources/app/img/products/'.$data['Image'][0]['facebook'].'" />';
@@ -102,7 +102,7 @@
             echo '<meta property="fb:app_id" content="338515926310582" />'; // <###### CHANGE THIS #######>
 
             echo '<meta name="twitter:card" content="summary_large_image" />';
-            echo '<meta name="twitter:site" content="@romelgomez07" />';  // <###### CHANGE THIS #######>
+            echo '<meta name="twitter:site" content="@tuford" />';  // <###### CHANGE THIS #######>
             echo '<meta name="twitter:title" content="'.$SITE_NAME.'" />';
             echo '<meta name="twitter:description" content="Visita el stock de producto y/o servicios que tengo para ti">'; // <###### CHANGE THIS #######>
             echo '<meta name="twitter:image:src" content="'.$SITE_URL.'/'.$banner.'" />';

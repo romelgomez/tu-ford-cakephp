@@ -11,8 +11,8 @@
 	<meta http-equiv="pragma" content="no-cache" />
 
     <?php
-        $SITE_URL   = 'http://www.example-store.com';
-        $SITE_NAME  = 'ExampleStore.com';
+        $SITE_URL   = 'http://www.tuford.com';
+        $SITE_NAME  = 'TuFord.com';
     ?>
 
     <title><?php echo $SITE_NAME ?></title>;

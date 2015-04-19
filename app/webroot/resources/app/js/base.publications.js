@@ -679,7 +679,7 @@ $(document).ready(function(){
 					'<a href="'+publicationLink+'"><img src="'+image+'" alt="..."></a>'+
 					'<div class="caption" style="border-top: 1px solid gold;">'+
 					'<h3><a href="'+publicationLink+'" style="color: white;" >'+title+'</a></h3>'+
-					'<h4 style="color: gold;">Price: $'+price+'</h4>'+
+					'<h4 style="color: gold;">Precio: $'+price+'</h4>'+
 					'</div>'+
 					'</div>'+
 					'</div>';
@@ -781,25 +781,25 @@ $(document).ready(function(){
 
             switch (order) {
                 case 'highest-price':
-                    orderBy.text('Highest price');
+                    orderBy.text(' Mayor precio');
                     break;
                 case 'lowest-price':
-                    orderBy.text('Lowest price');
+                    orderBy.text('  Menor precio');
                     break;
                 case 'latest':
-                    orderBy.text('Latest');
+                    orderBy.text(' Publicaciones recientes');
                     break;
                 case 'oldest':
-                    orderBy.text('Oldest');
+                    orderBy.text(' Publicaciones antiguas');
                     break;
                 case 'higher-availability':
-                    orderBy.text('Higher availability');
+                    orderBy.text(' Mayor stock');
                     break;
                 case 'lower-availability':
-                    orderBy.text('Lower availability');
+                    orderBy.text(' Menor stock');
                     break;
                 default:
-                    orderBy.text('Latest');
+                    orderBy.text('Publicaciones recientes');
             }
 
         };
@@ -822,7 +822,7 @@ $(document).ready(function(){
                         notification = ajax.notification("beforeSend");
                     },
                     "success":function(response){
-                        console.log(response);
+                        //console.log(response);
 
                         if(response['expired_session']){
                             window.location = "/login";
@@ -1105,7 +1105,7 @@ $(document).ready(function(){
                         notification = ajax.notification("beforeSend");
                     },
                     "success":function(response){
-                        console.log('search',response);
+                        //console.log('search',response);
 
 
                         if(response['expired_session']){

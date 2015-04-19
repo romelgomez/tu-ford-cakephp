@@ -68,9 +68,9 @@ if($bannerSelected){
 									<form role="form" id="SearchPublicationsForm">
 										<div class="form-group" style="margin-bottom: 0;">
 											<div class="input-group">
-												<input type="text" class="form-control" id="search" name="search" placeholder="Eje: Laptops">
+												<input type="text" class="form-control" id="search" name="search" placeholder="Eje: F150">
 									<span class="input-group-btn">
-										<button class="btn btn-default" type="submit">Search</button>
+										<button class="btn btn-default" type="submit">Buscar</button>
 									</span>
 											</div>
 										</div>
@@ -91,8 +91,8 @@ if($bannerSelected){
 										<div id="pagination" style="display:none; overflow: hidden;  float: left;"   >
 											<div style="float: left; margin-right: 10px; ">
 												<div class="btn-group" >
-													<button id="prev-page" class="btn btn-default disabled" disabled><i class="icon-chevron-left"></i> Previous</button>
-													<button id="next-page" class="btn btn-default disabled" disabled><i class="icon-chevron-right"></i> Next</button>
+													<button id="prev-page" class="btn btn-default disabled" disabled><i class="icon-chevron-left"></i> Anterior</button>
+													<button id="next-page" class="btn btn-default disabled" disabled><i class="icon-chevron-right"></i> Siguiente</button>
 												</div>
 											</div>
 										</div>
@@ -102,21 +102,21 @@ if($bannerSelected){
 										<div id="order-by" style="display:none; float: left; margin-right: 10px; ">
 											<div class="btn-group">
 												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-													Sort by:  <span id="order-by-text">Latest</span> <span class="caret"></span>
+													Ordenados por:  <span id="order-by-text">Publicaciones recientes</span> <span class="caret"></span>
 												</button>
 												<ul class="dropdown-menu dropdown-menu-right" role="menu">
-													<li><a id="latest" href="#"><span class="glyphicon glyphicon-time"></span> Latest</a></li>
-													<li><a id="oldest" href="#"><span class="glyphicon glyphicon-calendar"></span> Oldest</a></li>
+													<li><a id="latest" href="#"><span class="glyphicon glyphicon-time"></span> Publicaciones recientes</a></li>
+													<li><a id="oldest" href="#"><span class="glyphicon glyphicon-calendar"></span> Publicaciones antiguas</a></li>
 
 													<li class="divider"></li>
 
-													<li><a id="highest-price" href="#"><span class="glyphicon glyphicon-tags"></span> Highest price</a></li>
-													<li><a id="lowest-price" href="#"><span class="glyphicon glyphicon-tag"></span> Lowest price</a></li>
+													<li><a id="highest-price" href="#"><span class="glyphicon glyphicon-tags"></span> Mayor precio</a></li>
+													<li><a id="lowest-price" href="#"><span class="glyphicon glyphicon-tag"></span> Menor precio</a></li>
 
 													<li class="divider"></li>
 
-													<li><a id="higher-availability" href="#"><span class="glyphicon glyphicon-th"></span> Higher availability</a></li>
-													<li><a id="lower-availability" href="#"><span class="glyphicon glyphicon-th-large"></span> Lower availability</a></li>
+													<li><a id="higher-availability" href="#"><span class="glyphicon glyphicon-th"></span> Mayor stock</a></li>
+													<li><a id="lower-availability" href="#"><span class="glyphicon glyphicon-th-large"></span> Menor stock</a></li>
 												</ul>
 											</div>
 										</div>
@@ -129,7 +129,7 @@ if($bannerSelected){
 
 
 					<div  id="search-info" style="display: none;" class="alert alert-info" role="alert" >
-						not have products in stock for this search: (<span id="search-info-text"></span>). <a href="/stock">Check the other products in their stock</a>
+						No tenemos productos en stock para esta búsqueda: (<span id="search-info-text"></span>). <a href="/">Revisa los otros productos que tenemos en stock</a>
 					</div>
 
 					<div id="products" class="row"></div>

@@ -56,7 +56,7 @@ if($bannerSelected){
             <div class="panel panel-default" style="border: 1px solid black;">
                 <!-- Default panel contents -->
                 <div class="panel-heading" style="background: url(/resources/app/img/small_steps.png); border-bottom: 1px solid black;">
-                    <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Images:
+                    <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Imágenes:
                 </div>
                 <div class="panel-body">
                     <?php foreach($this->request->data['Image'] as $index => $imagen){ ?>
@@ -69,7 +69,7 @@ if($bannerSelected){
                 </div>
                 <ul class="list-group">
                     <li class="list-group-item" style="background: url(/resources/app/img/small_steps.png); border-top: 1px solid black;">
-                        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Description:
+                        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Descripción:
                     </li>
                     <li class="list-group-item" style="border-top: 1px solid black;">
                         <?php  echo ucfirst($data['Product']['body']) ?>
@@ -77,7 +77,7 @@ if($bannerSelected){
                     <li class="list-group-item" style="background: url(/resources/app/img/escheresque_ste.png); border-top: 1px solid gold;">
                         <h2 class="text-info" style="color: gold; margin-top: 10px;">
                             <span class="glyphicon glyphicon-tag"></span>
-                            Price: $<?php echo $data['Product']['price'] ?>
+                            Precio: $<?php echo $data['Product']['price'] ?>
                         </h2>
                     </li>
                 </ul>

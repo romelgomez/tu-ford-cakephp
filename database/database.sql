@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 21-04-2015 a las 11:11:15
+-- Tiempo de generación: 21-04-2015 a las 12:15:39
 -- Versión del servidor: 5.5.37-0ubuntu0.14.04.1
 -- Versión de PHP: 5.5.9-1ubuntu4
 
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `cake_sessions` (
 INSERT INTO `cake_sessions` (`id`, `data`, `expires`) VALUES
 ('4sk1i43ume1701q27enh6gfb01', 'Config|a:3:{s:9:"userAgent";s:32:"55f6b1fe2e3fe037781160074d23dbdc";s:4:"time";i:1421955675;s:9:"countdown";i:10;}Auth|a:1:{s:8:"redirect";s:1:"/";}Message|a:1:{s:4:"auth";a:3:{s:7:"message";s:47:"You are not authorized to access that location.";s:7:"element";s:7:"default";s:6:"params";a:0:{}}}', 1421955675),
 ('19ho6satuitn85dd3jah4fu2h3', 'Config|a:3:{s:9:"userAgent";s:32:"fbbe48b71c2e980eae4b9031776ba90e";s:4:"time";i:1428611343;s:9:"countdown";i:10;}Auth|a:1:{s:4:"User";a:1:{s:4:"User";a:15:{s:2:"id";s:36:"54bd4fc0-45f0-464f-82f1-33007f000008";s:8:"password";s:60:"$2a$10$p60MfrOlgo7Va3U.cobLgefwQuUT/SDaB6Ge4JuPMjN0gS7NGkmAa";s:13:"temp_password";s:60:"$2a$10$Y2QiMLKCKJnmWVqJ2YSsXeU6Tg/zfGr3ykOtPsVoixwP/k6YUKhOu";s:4:"name";s:5:"Maria";s:5:"email";s:13:"mia@gmail.com";s:14:"email_verified";b:1;s:5:"phone";N;s:6:"banner";N;s:6:"banned";b:0;s:13:"banned_reason";N;s:9:"suspended";b:0;s:16:"suspended_reason";N;s:7:"deleted";b:0;s:7:"created";s:19:"2015-01-19 14:11:04";s:8:"modified";s:19:"2015-01-19 14:11:04";}}}', 1428611343),
-('0bqdhu09bmb7b59tk5mgv5sjj0', 'Config|a:3:{s:9:"userAgent";s:32:"fbbe48b71c2e980eae4b9031776ba90e";s:4:"time";i:1429889959;s:9:"countdown";i:10;}Auth|a:1:{s:4:"User";a:1:{s:4:"User";a:15:{s:2:"id";s:36:"553663ab-ac70-4623-b043-17bd7f00000d";s:8:"password";s:60:"$2a$10$LgtmvBkR9uheJg8QUE61duUXdmAXv6DUNcb2EhQMx0dgzoLQu5k7G";s:13:"temp_password";s:60:"$2a$10$4MZ4/YXum5rfjUYqBxziqeDUZzxbtMiSZhFyVufAfL.QCobgNUhGW";s:4:"name";s:5:"Romel";s:5:"email";s:27:"bmxquiksilver7185@gmail.com";s:14:"email_verified";b:1;s:5:"phone";N;s:6:"banner";N;s:6:"banned";b:0;s:13:"banned_reason";N;s:9:"suspended";b:0;s:16:"suspended_reason";N;s:7:"deleted";b:0;s:7:"created";s:19:"2015-04-21 10:20:19";s:8:"modified";s:19:"2015-04-21 10:20:19";}}}', 1429889959);
+('0bqdhu09bmb7b59tk5mgv5sjj0', 'Config|a:3:{s:9:"userAgent";s:32:"fbbe48b71c2e980eae4b9031776ba90e";s:4:"time";i:1429891417;s:9:"countdown";i:10;}Auth|a:1:{s:4:"User";a:1:{s:4:"User";a:15:{s:2:"id";s:36:"553663ab-ac70-4623-b043-17bd7f00000d";s:8:"password";s:60:"$2a$10$LgtmvBkR9uheJg8QUE61duUXdmAXv6DUNcb2EhQMx0dgzoLQu5k7G";s:13:"temp_password";s:60:"$2a$10$4MZ4/YXum5rfjUYqBxziqeDUZzxbtMiSZhFyVufAfL.QCobgNUhGW";s:4:"name";s:5:"Romel";s:5:"email";s:27:"bmxquiksilver7185@gmail.com";s:14:"email_verified";b:1;s:5:"phone";N;s:6:"banner";N;s:6:"banned";b:0;s:13:"banned_reason";N;s:9:"suspended";b:0;s:16:"suspended_reason";N;s:7:"deleted";b:0;s:7:"created";s:19:"2015-04-21 10:20:19";s:8:"modified";s:19:"2015-04-21 10:20:19";}}}', 1429891417);
 
 -- --------------------------------------------------------
 
@@ -231,7 +231,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email_verified` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `phone` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `banned` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `banned_reason` varchar(300) CHARACTER SET utf16 COLLATE utf16_unicode_ci DEFAULT NULL,
+  `banned_reason` varchar(300) COLLATE utf8_unicode_ci DEFAULT NULL,
   `suspended` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `suspended_reason` varchar(300) COLLATE utf8_unicode_ci DEFAULT NULL,
   `deleted` tinyint(1) unsigned NOT NULL DEFAULT '0',

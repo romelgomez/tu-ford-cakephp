@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 06-04-2015 a las 16:12:01
+-- Tiempo de generación: 21-04-2015 a las 11:11:15
 -- Versión del servidor: 5.5.37-0ubuntu0.14.04.1
 -- Versión de PHP: 5.5.9-1ubuntu4
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `cakephp-store`
+-- Base de datos: `tu-ford-cakephp`
 --
 
 -- --------------------------------------------------------
@@ -45,26 +45,8 @@ CREATE TABLE IF NOT EXISTS `banners` (
 --
 
 INSERT INTO `banners` (`id`, `parent_id`, `user_id`, `size`, `name`, `name_tag`, `selected`, `deleted`, `created`, `modified`) VALUES
-('5522d119-5700-40a3-a9ec-236a7f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', 'e86a1cd6-555f-4fe5-9aa9-19cee55f9f06.jpg', '04G-P4-3688-KR_LG_4.jpg', 0, 0, '2015-04-06 14:01:53', '2015-04-06 14:59:26'),
-('5522d119-7d08-41b0-b922-23607f00000c', '5522d119-9ac0-4cd2-ad16-23607f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', '31520745-a081-4309-ae42-c16a787ebdb8.jpg', '120-PG-0750-GR_LG_3.jpg', 0, 0, '2015-04-06 14:01:53', '2015-04-06 14:59:26'),
-('5522d119-9ac0-4cd2-ad16-23607f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', '314da80a-91f3-4a02-bde9-cf6935045296.jpg', '120-PG-0750-GR_LG_3.jpg', 0, 0, '2015-04-06 14:01:53', '2015-04-06 14:59:26'),
-('5522d119-c140-4a1f-9e67-236a7f00000c', '5522d119-5700-40a3-a9ec-236a7f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', 'c3e65357-6146-4daf-b339-c66f6ea5e1be.jpg', '04G-P4-3688-KR_LG_4.jpg', 0, 0, '2015-04-06 14:01:53', '2015-04-06 14:59:26'),
-('5522d13c-634c-4a20-b69f-12787f00000c', '5522d13c-ba38-47e5-8b20-12787f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', 'c2410b08-f58c-43d0-9b1e-f89100b75467.jpg', '04G-P4-2699-K2_LG_6.jpg', 0, 0, '2015-04-06 14:02:28', '2015-04-06 14:59:26'),
-('5522d13c-8f9c-4841-b460-23607f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', '9385808b-b85a-4293-a752-99f9b921e7b4.jpg', '120-PG-0750-GR_LG_4.jpg', 0, 0, '2015-04-06 14:02:28', '2015-04-06 14:59:26'),
-('5522d13c-ba38-47e5-8b20-12787f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', 'ec18d75c-d0f0-4f5f-b0f7-81e20864a28f.jpg', '04G-P4-2699-K2_LG_6.jpg', 0, 0, '2015-04-06 14:02:28', '2015-04-06 14:59:26'),
-('5522d13c-fb38-42a5-ac2f-23607f00000c', '5522d13c-8f9c-4841-b460-23607f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', 'ace59b73-5c4d-4412-b1b0-e2d48fe10929.jpg', '120-PG-0750-GR_LG_4.jpg', 0, 0, '2015-04-06 14:02:28', '2015-04-06 14:59:26'),
-('5522d237-4400-4c76-a1d3-24a77f00000c', '5522d237-8c80-4e34-93ee-24a77f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', '1dd48567-f864-4eff-96d5-30c0a05abafe.jpg', '04G-P4-3688-KR_LG_6.jpg', 0, 0, '2015-04-06 14:06:39', '2015-04-06 14:59:26'),
-('5522d237-55b8-4bff-b7ca-11247f00000c', '5522d237-7de4-4d3c-9744-11247f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', '2b7f546b-06c4-40e8-b9f3-bef817b9fb74.jpg', '04G-P4-2690-KR_LG_4.jpg', 0, 0, '2015-04-06 14:06:39', '2015-04-06 14:59:26'),
-('5522d237-7de4-4d3c-9744-11247f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', '5f8420fc-96b6-414c-95e5-46cd35246716.jpg', '04G-P4-2690-KR_LG_4.jpg', 0, 0, '2015-04-06 14:06:39', '2015-04-06 14:59:26'),
-('5522d237-8c80-4e34-93ee-24a77f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', 'e32436cb-f5c8-42ce-bfab-c8c44f96301f.jpg', '04G-P4-3688-KR_LG_6.jpg', 0, 0, '2015-04-06 14:06:39', '2015-04-06 14:59:26'),
-('5522d2aa-b90c-4c3b-981d-12787f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', '59fa2008-f5e4-4fa3-89ea-606b944a13af.jpg', '120-PG-0750-GR_LG_3.jpg', 0, 0, '2015-04-06 14:08:34', '2015-04-06 14:59:27'),
-('5522d2ab-2df0-470d-aa86-218a7f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', '577ef968-737f-4966-9b81-688ddaf4fe45.jpg', '120-PG-1500-XR_LG_7.jpg', 0, 0, '2015-04-06 14:08:35', '2015-04-06 14:59:27'),
-('5522d2ab-63c4-441e-9df0-12787f00000c', '5522d2aa-b90c-4c3b-981d-12787f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', 'd5f05ea3-5359-4e17-a484-f82ece2f75d8.jpg', '120-PG-0750-GR_LG_3.jpg', 0, 0, '2015-04-06 14:08:35', '2015-04-06 14:59:27'),
-('5522d2ab-67ec-4308-aae3-218a7f00000c', '5522d2ab-2df0-470d-aa86-218a7f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', '3bba7034-e367-4c9e-bbc6-91fa962b8286.jpg', '120-PG-1500-XR_LG_7.jpg', 0, 0, '2015-04-06 14:08:35', '2015-04-06 14:59:27'),
-('5522d6c6-b85c-49e3-8230-24de7f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', '14a97b60-9866-4112-84b8-964f3d468521.jpg', '120-PG-0750-GR_LG_3.jpg', 0, 0, '2015-04-06 14:26:06', '2015-04-06 14:59:27'),
-('5522d6c7-ebe8-495e-94f9-24de7f00000c', '5522d6c6-b85c-49e3-8230-24de7f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', 'e96ddb7c-1f52-470f-ac16-a24c0218d5b4.jpg', '120-PG-0750-GR_LG_3.jpg', 0, 0, '2015-04-06 14:26:07', '2015-04-06 14:59:27'),
-('5522de94-e7d8-4801-b9a5-29647f00000c', NULL, '54bd4fc0-45f0-464f-82f1-33007f000008', 'small', '9e9057f2-2abb-4d8b-984f-93f9f4a86eab.jpg', 'hero-1.jpg', 0, 0, '2015-04-06 14:59:24', '2015-04-06 14:59:27'),
-('5522de95-53e8-4986-80f3-29647f00000c', '5522de94-e7d8-4801-b9a5-29647f00000c', '54bd4fc0-45f0-464f-82f1-33007f000008', 'facebook', '8a726a00-2490-48b8-9f5c-dd360989049b.jpg', 'hero-1.jpg', 1, 0, '2015-04-06 14:59:25', '2015-04-06 14:59:27');
+('55366eff-5790-4f06-a96a-17307f00000d', '55366eff-8044-468d-bdd2-17307f00000d', '553663ab-ac70-4623-b043-17bd7f00000d', 'facebook', '784afcf3-eb73-48f9-acf4-129263635200.jpg', 'Directivos-en-Zaragoza-Car.jpg', 1, 0, '2015-04-21 11:08:39', '2015-04-21 11:08:41'),
+('55366eff-8044-468d-bdd2-17307f00000d', NULL, '553663ab-ac70-4623-b043-17bd7f00000d', 'small', '7ee45751-bced-4474-9f5a-5a0217ed2123.jpg', 'Directivos-en-Zaragoza-Car.jpg', 0, 0, '2015-04-21 11:08:39', '2015-04-21 11:08:40');
 
 -- --------------------------------------------------------
 
@@ -85,7 +67,8 @@ CREATE TABLE IF NOT EXISTS `cake_sessions` (
 
 INSERT INTO `cake_sessions` (`id`, `data`, `expires`) VALUES
 ('4sk1i43ume1701q27enh6gfb01', 'Config|a:3:{s:9:"userAgent";s:32:"55f6b1fe2e3fe037781160074d23dbdc";s:4:"time";i:1421955675;s:9:"countdown";i:10;}Auth|a:1:{s:8:"redirect";s:1:"/";}Message|a:1:{s:4:"auth";a:3:{s:7:"message";s:47:"You are not authorized to access that location.";s:7:"element";s:7:"default";s:6:"params";a:0:{}}}', 1421955675),
-('19ho6satuitn85dd3jah4fu2h3', 'Config|a:3:{s:9:"userAgent";s:32:"fbbe48b71c2e980eae4b9031776ba90e";s:4:"time";i:1428611343;s:9:"countdown";i:10;}Auth|a:1:{s:4:"User";a:1:{s:4:"User";a:15:{s:2:"id";s:36:"54bd4fc0-45f0-464f-82f1-33007f000008";s:8:"password";s:60:"$2a$10$p60MfrOlgo7Va3U.cobLgefwQuUT/SDaB6Ge4JuPMjN0gS7NGkmAa";s:13:"temp_password";s:60:"$2a$10$Y2QiMLKCKJnmWVqJ2YSsXeU6Tg/zfGr3ykOtPsVoixwP/k6YUKhOu";s:4:"name";s:5:"Maria";s:5:"email";s:13:"mia@gmail.com";s:14:"email_verified";b:1;s:5:"phone";N;s:6:"banner";N;s:6:"banned";b:0;s:13:"banned_reason";N;s:9:"suspended";b:0;s:16:"suspended_reason";N;s:7:"deleted";b:0;s:7:"created";s:19:"2015-01-19 14:11:04";s:8:"modified";s:19:"2015-01-19 14:11:04";}}}', 1428611343);
+('19ho6satuitn85dd3jah4fu2h3', 'Config|a:3:{s:9:"userAgent";s:32:"fbbe48b71c2e980eae4b9031776ba90e";s:4:"time";i:1428611343;s:9:"countdown";i:10;}Auth|a:1:{s:4:"User";a:1:{s:4:"User";a:15:{s:2:"id";s:36:"54bd4fc0-45f0-464f-82f1-33007f000008";s:8:"password";s:60:"$2a$10$p60MfrOlgo7Va3U.cobLgefwQuUT/SDaB6Ge4JuPMjN0gS7NGkmAa";s:13:"temp_password";s:60:"$2a$10$Y2QiMLKCKJnmWVqJ2YSsXeU6Tg/zfGr3ykOtPsVoixwP/k6YUKhOu";s:4:"name";s:5:"Maria";s:5:"email";s:13:"mia@gmail.com";s:14:"email_verified";b:1;s:5:"phone";N;s:6:"banner";N;s:6:"banned";b:0;s:13:"banned_reason";N;s:9:"suspended";b:0;s:16:"suspended_reason";N;s:7:"deleted";b:0;s:7:"created";s:19:"2015-01-19 14:11:04";s:8:"modified";s:19:"2015-01-19 14:11:04";}}}', 1428611343),
+('0bqdhu09bmb7b59tk5mgv5sjj0', 'Config|a:3:{s:9:"userAgent";s:32:"fbbe48b71c2e980eae4b9031776ba90e";s:4:"time";i:1429889959;s:9:"countdown";i:10;}Auth|a:1:{s:4:"User";a:1:{s:4:"User";a:15:{s:2:"id";s:36:"553663ab-ac70-4623-b043-17bd7f00000d";s:8:"password";s:60:"$2a$10$LgtmvBkR9uheJg8QUE61duUXdmAXv6DUNcb2EhQMx0dgzoLQu5k7G";s:13:"temp_password";s:60:"$2a$10$4MZ4/YXum5rfjUYqBxziqeDUZzxbtMiSZhFyVufAfL.QCobgNUhGW";s:4:"name";s:5:"Romel";s:5:"email";s:27:"bmxquiksilver7185@gmail.com";s:14:"email_verified";b:1;s:5:"phone";N;s:6:"banner";N;s:6:"banned";b:0;s:13:"banned_reason";N;s:9:"suspended";b:0;s:16:"suspended_reason";N;s:7:"deleted";b:0;s:7:"created";s:19:"2015-04-21 10:20:19";s:8:"modified";s:19:"2015-04-21 10:20:19";}}}', 1429889959);
 
 -- --------------------------------------------------------
 
@@ -182,7 +165,25 @@ INSERT INTO `images` (`id`, `parent_id`, `product_id`, `size`, `name`, `name_tag
 ('5522d0fc-8ea8-4ed3-a4ff-24797f00000c', '5522d0fc-0c34-4d47-a3e2-24797f00000c', '54bd5007-81e8-4ea7-b04d-303d7f000008', 'large', 'd13f8417-a815-4894-b182-3e1145fb543f.jpg', '120-PG-0750-GR_LG_1.jpg', 0, '2015-04-06 14:01:24', '2015-04-06 14:01:24'),
 ('5522d0fc-d15c-4e98-b90a-11247f00000c', '5522d0fc-8a9c-4d08-b3b4-11247f00000c', '54bd5007-81e8-4ea7-b04d-303d7f000008', 'large', '5c3fd36e-7009-4a55-9c39-690c5588e1f5.jpg', '151-SE-E779-K2_LG_7.jpg', 0, '2015-04-06 14:01:24', '2015-04-06 14:01:24'),
 ('5522d0fc-d2e8-459e-89ab-11247f00000c', '5522d0fc-8a9c-4d08-b3b4-11247f00000c', '54bd5007-81e8-4ea7-b04d-303d7f000008', 'facebook', '3f5b8305-3780-46dc-8df7-9f39acbfc613.jpg', '151-SE-E779-K2_LG_7.jpg', 0, '2015-04-06 14:01:24', '2015-04-06 14:01:24'),
-('5522d0fc-f338-45c7-8551-11247f00000c', '5522d0fc-6d54-48e8-af27-11247f00000c', '54bd5007-81e8-4ea7-b04d-303d7f000008', 'large', '1edd0d9b-850e-48da-af12-cc7b900495ff.jpg', '120-PG-1500-XR_LG_3.jpg', 0, '2015-04-06 14:01:24', '2015-04-06 14:01:24');
+('5522d0fc-f338-45c7-8551-11247f00000c', '5522d0fc-6d54-48e8-af27-11247f00000c', '54bd5007-81e8-4ea7-b04d-303d7f000008', 'large', '1edd0d9b-850e-48da-af12-cc7b900495ff.jpg', '120-PG-1500-XR_LG_3.jpg', 0, '2015-04-06 14:01:24', '2015-04-06 14:01:24'),
+('55366b46-1500-4ba7-af3a-1acd7f00000d', '55366b46-f4c8-4bc3-a604-1acd7f00000d', '55366b45-8f54-4954-8eff-1acd7f00000d', 'facebook', '0de3d44c-a111-4b22-9d63-a3922710c139.jpg', '2015-Ford-F-250-Lariat.jpg', 0, '2015-04-21 10:52:46', '2015-04-21 10:52:46'),
+('55366b46-34b4-45cc-b5af-1a777f00000d', '55366b46-b5a8-4702-935f-1a777f00000d', '55366b45-8f54-4954-8eff-1acd7f00000d', 'facebook', '05ffe749-0c3b-4a7a-977e-d1adcbb7dae9.jpeg', '2015-Ford-F-250-Super-Duty-Images-Picture-HD-Wallpaper.jpeg', 0, '2015-04-21 10:52:46', '2015-04-21 10:52:46'),
+('55366b46-a314-4414-9c62-1acd7f00000d', '55366b46-f4c8-4bc3-a604-1acd7f00000d', '55366b45-8f54-4954-8eff-1acd7f00000d', 'large', 'd28c2cf7-2932-4398-880b-fecc8c41ed63.jpg', '2015-Ford-F-250-Lariat.jpg', 0, '2015-04-21 10:52:46', '2015-04-21 10:52:46'),
+('55366b46-b5a8-4702-935f-1a777f00000d', NULL, '55366b45-8f54-4954-8eff-1acd7f00000d', 'small', '815cdc58-b540-458e-899b-a58c289abf80.jpeg', '2015-Ford-F-250-Super-Duty-Images-Picture-HD-Wallpaper.jpeg', 0, '2015-04-21 10:52:46', '2015-04-21 10:52:46'),
+('55366b46-ca14-4bac-8063-1a777f00000d', '55366b46-b5a8-4702-935f-1a777f00000d', '55366b45-8f54-4954-8eff-1acd7f00000d', 'large', 'c0e76ff5-8e47-46b6-a1a1-b4e4aa692894.jpeg', '2015-Ford-F-250-Super-Duty-Images-Picture-HD-Wallpaper.jpeg', 0, '2015-04-21 10:52:46', '2015-04-21 10:52:46'),
+('55366b46-f4c8-4bc3-a604-1acd7f00000d', NULL, '55366b45-8f54-4954-8eff-1acd7f00000d', 'small', 'd985c702-eb92-4e18-b117-352bcf942641.jpg', '2015-Ford-F-250-Lariat.jpg', 0, '2015-04-21 10:52:46', '2015-04-21 10:52:46'),
+('55366d5d-4e88-4706-b0ed-1c567f00000d', '55366d5d-64e8-48bb-98b4-1c567f00000d', '55366d5c-a658-4fbd-9b4e-1c567f00000d', 'facebook', '12787444-d563-481d-8435-c598d188ec9d.jpg', '2015-ford-f-series-super-duty-king-ranch-closer-view.jpg', 0, '2015-04-21 11:01:41', '2015-04-21 11:01:41'),
+('55366d5d-64e8-48bb-98b4-1c567f00000d', NULL, '55366d5c-a658-4fbd-9b4e-1c567f00000d', 'small', '31954c13-0c7e-4b41-b324-6bd3e0ddeb00.jpg', '2015-ford-f-series-super-duty-king-ranch-closer-view.jpg', 0, '2015-04-21 11:01:41', '2015-04-21 11:01:41'),
+('55366d5d-a6d4-4e63-b8b4-1c567f00000d', '55366d5d-64e8-48bb-98b4-1c567f00000d', '55366d5c-a658-4fbd-9b4e-1c567f00000d', 'large', '2df27128-7f97-40da-8b26-f737990add20.jpg', '2015-ford-f-series-super-duty-king-ranch-closer-view.jpg', 0, '2015-04-21 11:01:41', '2015-04-21 11:01:41'),
+('55366d7b-efe4-4744-ac0d-1acd7f00000d', NULL, '55366d5c-a658-4fbd-9b4e-1c567f00000d', 'small', '7ff29e56-4051-4718-89a9-6ca27cbbed00.jpg', '2015-Ford-F-250-XLT.jpg', 0, '2015-04-21 11:02:11', '2015-04-21 11:02:11'),
+('55366d7c-6638-4fb4-be07-1acd7f00000d', '55366d7b-efe4-4744-ac0d-1acd7f00000d', '55366d5c-a658-4fbd-9b4e-1c567f00000d', 'facebook', 'fb605d58-0601-49f6-84c4-fabb5abf444b.jpg', '2015-Ford-F-250-XLT.jpg', 0, '2015-04-21 11:02:12', '2015-04-21 11:02:12'),
+('55366d7c-c548-460b-bdad-1acd7f00000d', '55366d7b-efe4-4744-ac0d-1acd7f00000d', '55366d5c-a658-4fbd-9b4e-1c567f00000d', 'large', 'f3db27e3-bb3e-49e5-9b70-98f6cdca9b17.jpg', '2015-Ford-F-250-XLT.jpg', 0, '2015-04-21 11:02:12', '2015-04-21 11:02:12'),
+('55366e47-1118-42c6-bb5a-1e617f00000d', '55366e47-4ea8-4465-b519-1e617f00000d', '55366e46-b02c-4fe0-bd2d-17bd7f00000d', 'facebook', 'b74d9285-40f2-4a0e-a632-a52d62084b7c.jpg', 'photo.jpg', 0, '2015-04-21 11:05:35', '2015-04-21 11:05:35'),
+('55366e47-17e8-4409-9d83-17bd7f00000d', '55366e47-d9e4-4ff2-a2ce-17bd7f00000d', '55366e46-b02c-4fe0-bd2d-17bd7f00000d', 'large', '94d308f4-d31d-418b-9b49-7f2009dec459.jpg', '2015-Ford-F-250-King-Ranch-Review.jpg', 0, '2015-04-21 11:05:35', '2015-04-21 11:05:35'),
+('55366e47-1b00-42ba-bfc8-1e617f00000d', '55366e47-4ea8-4465-b519-1e617f00000d', '55366e46-b02c-4fe0-bd2d-17bd7f00000d', 'large', '4bced92e-4832-49e9-bbd4-32eb1d48518b.jpg', 'photo.jpg', 0, '2015-04-21 11:05:35', '2015-04-21 11:05:35'),
+('55366e47-4ea8-4465-b519-1e617f00000d', NULL, '55366e46-b02c-4fe0-bd2d-17bd7f00000d', 'small', '5f31eed9-add5-4f38-912e-201bdb4aef7b.jpg', 'photo.jpg', 0, '2015-04-21 11:05:35', '2015-04-21 11:05:35'),
+('55366e47-d9e4-4ff2-a2ce-17bd7f00000d', NULL, '55366e46-b02c-4fe0-bd2d-17bd7f00000d', 'small', '4fa1586f-dfab-4e5c-9d41-7e7e4f156d22.jpg', '2015-Ford-F-250-King-Ranch-Review.jpg', 0, '2015-04-21 11:05:35', '2015-04-21 11:05:35'),
+('55366e47-eec0-4d5e-bac8-17bd7f00000d', '55366e47-d9e4-4ff2-a2ce-17bd7f00000d', '55366e46-b02c-4fe0-bd2d-17bd7f00000d', 'facebook', 'de59fe00-0ab8-42e9-85a6-9129f4ae383e.jpg', '2015-Ford-F-250-King-Ranch-Review.jpg', 0, '2015-04-21 11:05:35', '2015-04-21 11:05:35');
 
 -- --------------------------------------------------------
 
@@ -211,9 +212,9 @@ CREATE TABLE IF NOT EXISTS `products` (
 --
 
 INSERT INTO `products` (`id`, `user_id`, `title`, `body`, `price`, `quantity`, `status`, `published`, `banned`, `deleted`, `created`, `modified`) VALUES
-('54bd5007-81e8-4ea7-b04d-303d7f000008', '54bd4fc0-45f0-464f-82f1-33007f000008', 'Case corsair', '<p>ok la ase&nbsp;</p>', 11, 11, 1, 1, 0, 0, '2015-01-19 14:12:15', '2015-04-06 14:01:24'),
-('54bd583a-f4d8-4937-b992-3c1c7f000008', '54bd4fc0-45f0-464f-82f1-33007f000008', 'case', '<p>asasa xalskma., salksmnc</p>', 2121, 212, 1, 1, 0, 0, '2015-01-19 14:47:14', '2015-04-06 14:01:09'),
-('54bd5868-2ff8-403a-a06e-3a597f000008', '54bd4fc0-45f0-464f-82f1-33007f000008', 'dcsdcsd', '<p>sdcsdcsdcs</p>', 2, 221, 1, 1, 0, 0, '2015-01-19 14:48:00', '2015-04-06 14:00:51');
+('55366b45-8f54-4954-8eff-1acd7f00000d', '553663ab-ac70-4623-b043-17bd7f00000d', 'Ford 250 2015', '<p>Nice card on Sale</p>\n', 24993, 3, 1, 1, 0, 0, '2015-04-21 10:52:45', '2015-04-21 10:52:56'),
+('55366d5c-a658-4fbd-9b4e-1c567f00000d', '553663ab-ac70-4623-b043-17bd7f00000d', 'Ford 250 2015', '<p>Nice card on sale</p>\n', 26995, 2, 1, 1, 0, 0, '2015-04-21 11:01:40', '2015-04-21 11:02:14'),
+('55366e46-b02c-4fe0-bd2d-17bd7f00000d', '553663ab-ac70-4623-b043-17bd7f00000d', 'Ford 250 2014', '<p>nice card on sale</p>\n', 23999, 2, 1, 1, 0, 0, '2015-04-21 11:05:34', '2015-04-21 11:05:37');
 
 -- --------------------------------------------------------
 
@@ -229,7 +230,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `email_verified` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `phone` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `banner` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `banned` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `banned_reason` varchar(300) CHARACTER SET utf16 COLLATE utf16_unicode_ci DEFAULT NULL,
   `suspended` tinyint(1) unsigned NOT NULL DEFAULT '0',
@@ -244,8 +244,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `password`, `temp_password`, `name`, `email`, `email_verified`, `phone`, `banner`, `banned`, `banned_reason`, `suspended`, `suspended_reason`, `deleted`, `created`, `modified`) VALUES
-('54bd4fc0-45f0-464f-82f1-33007f000008', '$2a$10$p60MfrOlgo7Va3U.cobLgefwQuUT/SDaB6Ge4JuPMjN0gS7NGkmAa', '$2a$10$Y2QiMLKCKJnmWVqJ2YSsXeU6Tg/zfGr3ykOtPsVoixwP/k6YUKhOu', 'Maria', 'mia@gmail.com', 1, NULL, '3bba7034-e367-4c9e-bbc6-91fa962b8286.jpg', 0, NULL, 0, NULL, 0, '2015-01-19 14:11:04', '2015-04-06 14:08:38');
+INSERT INTO `users` (`id`, `password`, `temp_password`, `name`, `email`, `email_verified`, `phone`, `banned`, `banned_reason`, `suspended`, `suspended_reason`, `deleted`, `created`, `modified`) VALUES
+('54bd4fc0-45f0-464f-82f1-33007f000008', '$2a$10$p60MfrOlgo7Va3U.cobLgefwQuUT/SDaB6Ge4JuPMjN0gS7NGkmAa', '$2a$10$Y2QiMLKCKJnmWVqJ2YSsXeU6Tg/zfGr3ykOtPsVoixwP/k6YUKhOu', 'Maria', 'mia@gmail.com', 1, NULL, 0, NULL, 0, NULL, 0, '2015-01-19 14:11:04', '2015-04-06 14:08:38'),
+('553663ab-ac70-4623-b043-17bd7f00000d', '$2a$10$LgtmvBkR9uheJg8QUE61duUXdmAXv6DUNcb2EhQMx0dgzoLQu5k7G', '$2a$10$4MZ4/YXum5rfjUYqBxziqeDUZzxbtMiSZhFyVufAfL.QCobgNUhGW', 'Romel', 'bmxquiksilver7185@gmail.com', 1, NULL, 0, NULL, 0, NULL, 0, '2015-04-21 10:20:19', '2015-04-21 10:20:19');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

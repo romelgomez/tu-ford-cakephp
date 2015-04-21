@@ -208,7 +208,7 @@
 					<hr>
 
 					<p>
-						If you have any questions about this privacy policy or our treatment of your personal information, please contact us at support@marketplace.lol
+						If you have any questions about this privacy policy or our treatment of your personal information, please contact us at support@tuford.com
 					</p>
 
 				</div>

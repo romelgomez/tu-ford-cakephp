@@ -74,7 +74,7 @@ class DATABASE_CONFIG {
         'host' => 'localhost',
         'login' => 'root',
         'password' => '1',
-        'database' => 'cakephp-store',
+        'database' => 'tu-ford-cakephp',
         'prefix' => '',
         'encoding' => 'utf8',
     );

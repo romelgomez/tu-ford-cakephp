@@ -24,7 +24,7 @@
 					</form>
 				</div>
 				<div class="panel-footer">
-					<button id="new-user" type="button" class="btn btn-link">New User?</button>
+<!--					<button id="new-user" type="button" class="btn btn-link">New User?</button>-->
 					<button id="recover" type="button" class="btn btn-link">Forgot your password?</button>
 				</div>
 			</div>

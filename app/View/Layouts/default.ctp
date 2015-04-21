@@ -86,7 +86,7 @@
         if($url_action == ''){
 
             if(isset($bannerSelected) && $bannerSelected){
-                $banner = '/resources/app/img/banners/'.$bannerSelected['Banner']['name'];
+                $banner = 'resources/app/img/banners/'.$bannerSelected['Banner']['name'];
             }else{
                 $banner = 'resources/app/img/los-angeles.jpg';  // <###### CHANGE THIS #######>
             }
@@ -97,14 +97,14 @@
             echo '<meta property="og:url" content="'.$SITE_URL.'" />';
             echo '<meta property="og:type" content="website" />';
             echo '<meta property="og:site_name" content="'.$SITE_NAME.'" />';
-            echo '<meta property="og:description" content="Visita el stock de productos y/o servicios que tengo para ti" />'; // <###### CHANGE THIS #######>
+            echo '<meta property="og:description" content="Visita el stock de productos y/o servicios que tenemos para ti" />'; // <###### CHANGE THIS #######>
             echo '<meta property="og:image" content="'.$SITE_URL.'/'.$banner.'" />';
             echo '<meta property="fb:app_id" content="338515926310582" />'; // <###### CHANGE THIS #######>
 
             echo '<meta name="twitter:card" content="summary_large_image" />';
             echo '<meta name="twitter:site" content="@romelgomez07" />';  // <###### CHANGE THIS #######>
             echo '<meta name="twitter:title" content="'.$SITE_NAME.'" />';
-            echo '<meta name="twitter:description" content="Visita el stock de productos y/o servicios que tengo para ti">'; // <###### CHANGE THIS #######>
+            echo '<meta name="twitter:description" content="Visita el stock de productos y/o servicios que tenemos para ti">'; // <###### CHANGE THIS #######>
             echo '<meta name="twitter:image:src" content="'.$SITE_URL.'/'.$banner.'" />';
             echo '<meta name="twitter:url" content="'.$SITE_URL.'" />';
 
